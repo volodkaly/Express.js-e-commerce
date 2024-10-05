@@ -1,0 +1,11 @@
+extends layout
+
+block content
+    body 
+        h1 login
+        form(action="login" method='post')
+            input(type="email" name='email' placeholder='email')
+            input(type="password" name='password' placeholder='password')
+            button(type='submit') login
+        a(href='register')
+            button(class='btn btn-primary') register
